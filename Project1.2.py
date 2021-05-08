@@ -1,3 +1,9 @@
-Filename=input("Input the Filename: ")
-file_extension= Filename.split(".")
-print("The extension of the file is : " + file_extension[-1])
+fileName=input("Input the Filename: ")
+Dict={"py":"python","c":"C","cc":"C++","jsp":"Java","html":"HTML","pl":"Perl","php":"PHP"}
+if '.' in fileName:
+    i=fileName.index('.')
+    extension=fileName[i+1:]
+    print("The extension of the file is :")
+    print(Dict[extension])
+else:
+    print("INVALID INPUT")
